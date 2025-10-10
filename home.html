@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="utf-8"/>
+      <title>My First Page</title>
+      <link rel="stylesheet" type="text/css" href="homeselect.css"/>
+   </head>
+    <body >
+      <div class="welcome">
+         <img src="https://tse4.mm.bing.net/th?id=OIP.mQsqUdM0KLbg2h4_PuhXKQHaEK&pid=Api&P=0&h=180"/>
+        <div class="title">html學習</div>
+        <img src="https://tse4.mm.bing.net/th?id=OIP.mQsqUdM0KLbg2h4_PuhXKQHaEK&pid=Api&P=0&h=180"/>
+       </div>
+      <hr/>
+      <button class="buttonstyle" onmouseover="buttonchange(this)" onmouseout="buttonchange1(this)" onclick="change()"><div class="click">刪除網頁!</div></button>
+      <script>
+         function buttonchange1(elem){
+             elem.style.backgroundColor= "rgb(85, 5, 146)" ;
+             elem.querySelector(".click").textContent = "刪除網頁!";
+             elem.querySelector(".click").style.color="rgb(255, 0, 0)";
+             
+         }
+         function buttonchange(elem){
+           elem.style.backgroundColor= "red" ;
+           elem.querySelector(".click").textContent = "你確定嗎？";
+           elem.querySelector(".click").style.color="black";
+         }
+         function change(){
+          document.body.innerHTML='<div class=bigtitlestyle>已刪除</div><a href="file:///C:/Users/rlu31/OneDrive/%E6%A1%8C%E9%9D%A2/projects/HTML/home.html"><span class="select">回復刪除網頁</span></a>'
+         }
+      </script>
+      <div class="frame">
+         <div class="introduce" >學習資料</div>
+         <div class="arrow" >🡻🡻🡻🡻🡻🡻🡻🡻🡻🡻</div>
+       </div>
+       <ul>
+        <li><div class="smalltitle">學習資源</div></li>
+         <ol>
+            <li><a href="https://youtu.be/AIp3egWf-Pc?si=-rAZ9bG3qn1IsVJS"><span class="select">彭彭html課程</span></a></li>
+            <li><a href="https://www.youtube.com/watch?v=_oRJ8TNcHWo&list=PLneJIGUTIItsCaiHCd8Rte8kM0fIlyM2f"><span class="select">ASP.NET Core MVC入門教學</span></a></li>
+         </ol>
+       <hr/>
+       <li><div class="smalltitle">網站</div></li>
+         <ol>
+            <li><a href="https://www.google.com/"><span class="select">Google</span></a></li>
+            <li><a href="https://www.youtube.com/"><span class="select">Youtube</span></a></li>
+         </ol>
+      </ul>
+      
+      </body>
+   
+</html>
+  

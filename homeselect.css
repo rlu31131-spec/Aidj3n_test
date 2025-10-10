@@ -1,57 +1,117 @@
-   /*置中大標題*/
-   .welcome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-    background-color: rgb(0, 0, 0);
-   }
-   /*大標題*/
-    .title{
-        color: rgb(158, 0, 206);
-        font-size: 6em;
-        text-align: center;
-    }
-    /*背景色*/
-     body{background-color: darkturquoise;}
-     /*小標題*/
-     .smalltitle{font-size: 3em;font-weight: bold;}
-     /*連結選項*/
-     .select{font-size: 2em;}
-     /*橫向版面*/
-     .frame{ display: flex;}
-     /*簡介*/
-     .introduce{
-         color: rgb(175, 13, 23);
-         font-size: 4.0em;
-         font-weight: bold;
-         flex: none;
-         width:20%;
-        }
-     /*箭頭*/
-     .arrow{
-         color: rgb(226, 9, 223);
-         font-size: 4.0em;
-         font-weight: bold;
-         flex: none;
-         width: auto;
-        }
-    /*按鈕*/
-    .click{
-        font-size:3em ;
-        color: rgb(255, 0, 0);
-    }
-    /*按鈕樣式*/
-    .buttonstyle{
-       width: 250px;
-       height:100px ;
-       background-color: rgb(85, 5, 146);
-    }
-    /*刪除頁面大標記*/
-    .bigtitlestyle{
-        color: red;
-         font-size: 300px ;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-    }
+/* === 全域設定 === */
+body {
+  font-family: "Microsoft JhengHei", sans-serif;
+  background-color: #f5f3fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
+
+/* === 頁首區 === */
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(90deg, #6a0dad, #b17fe3);
+  color: white;
+  padding: 20px;
+}
+
+.welcome img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* === 按鈕區 === */
+.buttonstyle {
+  margin-top: 20px;
+  background-color: rgb(85, 5, 146);
+  border: none;
+  border-radius: 12px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.click {
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+
+/* === 已刪除狀態 === */
+.bigtitlestyle {
+  font-size: 50px;
+  color: red;
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+/* === 回復連結 === */
+.select {
+  color: #6a0dad;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.select:hover {
+  color: #b17fe3;
+  text-decoration: underline;
+}
+
+/* === 學習區塊 === */
+.frame {
+  margin-top: 40px;
+}
+
+.introduce {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4b0082;
+}
+
+.arrow {
+  font-size: 20px;
+  color: #6a0dad;
+}
+
+/* === 清單樣式 === */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ol {
+  list-style-type: decimal;
+  text-align: left;
+  display: inline-block;
+}
+
+.smalltitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: #6a0dad;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* === 連結樣式 === */
+a {
+  text-decoration: none;
+}
+
+a:hover .select {
+  color: #b17fe3;
+  text-decoration: underline;
+}
+

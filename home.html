@@ -26,9 +26,15 @@
            elem.querySelector(".click").textContent = "你確定嗎？";
            elem.querySelector(".click").style.color="black";
          }
-         function change(){
-          document.body.innerHTML='<div class=bigtitlestyle>已刪除</div><a href="https://rlu31131-spec.github.io/Aidj3n_test/home.html"><span class="select">回復刪除網頁</span></a>'
-         }
+         function change() {
+           document.body.innerHTML = `
+          <div class="bigtitlestyle">已刪除</div>
+          <button class="buttonstyle" onclick="location.reload()">
+          <span class="select">回復刪除網頁</span>
+          </button>
+           `;
+           }
+
       </script>
       <div class="frame">
          <div class="introduce" >學習資料</div>
@@ -53,5 +59,6 @@
 </html>
 
   
+
 
 
